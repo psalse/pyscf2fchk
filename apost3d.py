@@ -411,7 +411,7 @@ def write_fchk(mol, mf, titol,matriu_overlap,unrest=None,myhf=None):
        print('Wrong number of items')
        return
       nums=["{:16.8E}".format(i) for i in (val)]
-      print('\n'.join(''.join(nums[i:i+5]) for i in range(0, len(nums), 5)),file=nameHandle) 
+      print('\n'.join('  '.join(nums[i:i+5]) for i in range(0, len(nums), 5)),file=nameHandle)
 
     if unrest:
       val=[]
